@@ -19,15 +19,15 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/Eppwen") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/Assets215") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/KdramaTalkies')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "learningbots")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
@@ -38,22 +38,22 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
 auth_channel = environ.get('AUTH_CHANNEL', '')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 request_channel = environ.get('REQUEST_CHANNEL', '0')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
+MOVIE_UPDATE_CHANNEL = int(environ.get('DRAMA_UPDATE_CHANNEL', '0'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/KdramaTalkies') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_To_Generate_Links/7")
+TUTORIAL = environ.get("TUTORIAL", "")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "1ab8f9226671c3ea4da75be8c6f6ac012e0a9a09")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'shortxlinks.com')
+SHORTENER_API = environ.get("SHORTENER_API", "")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
 SHORTENER_API2 = environ.get("SHORTENER_API2", "")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '')
 SHORTENER_API3 = environ.get("SHORTENER_API3", "")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '')
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "0"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "0"))
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
@@ -79,7 +79,7 @@ REACTIONS = ["", "", "", "", "", "", "", ""]
 #---------------------------------------------------------------
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 PORT = environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
@@ -89,8 +89,8 @@ FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
 LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
-SPELL_CHECK = is_enabled('SPELL_CHECK', False)
-LINK_MODE = is_enabled('LINK_MODE', False)
+SPELL_CHECK = is_enabled('SPELL_CHECK', True)
+LINK_MODE = is_enabled('LINK_MODE', True)
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
